@@ -42,4 +42,8 @@ Start with the [protocol guide](docs/protocol.md), then the [extraction analysis
 
 ## Status
 
-Research prototype and proof materials for an interactive, classical, bounded-depth model. No open-source license has been selected for this private repository.
+Research prototype and proof materials for an interactive, classical, bounded-depth model.
+
+## License
+
+[MIT](LICENSE).
