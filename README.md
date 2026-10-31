@@ -1,47 +1,42 @@
 # Palimpsest
 
-![Palimpsest folding overview](assets/palimpsest-overview.png)
-
 High-arity lattice folding for Boolean quadratic relations.
 
-Palimpsest combines an accumulator with multiple source instances under a shared lattice commitment. Its analysis connects bounded openings, source validity, and a matching bounded-depth history through an explicit knowledge extractor.
+![Palimpsest folding overview](assets/palimpsest-overview.png)
 
-## Results
+Palimpsest folds an existing accumulator and multiple source instances into one reusable state. It combines canonical re-encoding and norm control with short-numerator comparison and independent opening anchors for knowledge extraction.
 
-- High-arity folding with explicit challenge timing and norm bounds.
-- Short-numerator comparison and scalar-bit recovery.
-- Independent opening anchors with a linear Module-SIS reduction.
-- A reviewed two-point extraction variant with weighted sampling coefficient `2 + 2k`.
+This repository contains Python reference components, reproducible calculations, and proofs for the interactive, bounded-depth protocol.
 
-The current prototype implements the three-point/weak-anchor baseline (coefficient 54 at `k=8`). The reviewed two-point variant has coefficient 18; its proof and sampling contract are included in the research notes.
+## Getting started
 
-## Repository
-
-| Directory | Contents |
-|---|---|
-| [docs/](docs/index.md) | Research notes, protocol, extraction, parameters, and scope |
-| [prototype/](prototype/) | Python reference components |
-| [tests/](tests/) | Local algebra and interface tests |
-| [scripts/](scripts/) | Test runner and reproducible cost checks |
-| [references/](references/README.md) | Reading list |
-
-## Run
-
-Requires Python 3.10 or later. The packaged checks use the standard library.
+Python 3.10+ is required; there are no third-party dependencies. Run from the repository root:
 
 ```sh
 python scripts/run_tests.py
-python scripts/extraction_costs.py
-python scripts/check_random_stop_costs.py
-python scripts/check_local_refinements.py
-python scripts/verify_certificates.py
 ```
 
-Start with the [protocol guide](docs/protocol.md), then the [extraction analysis](docs/extraction.md). See [scope](docs/scope.md) for the precise security model and the public-recovery baseline for the small example.
+The tests cover folding identities, challenge sampling, bit recovery, and extraction interfaces.
 
-## Status
+## Reproducing the calculations
 
-Research prototype and proof materials for an interactive, classical, bounded-depth model.
+| Command | Output |
+|---|---|
+| `python scripts/extraction_costs.py` | Extraction cost bounds across six arities |
+| `python scripts/check_random_stop_costs.py` | Finite sampling laws and weighted cost checks |
+| `python scripts/check_local_refinements.py` | Two-point sampling, bit recovery, and arithmetic cost checks |
+| `python scripts/verify_certificates.py` | Primality and challenge-domain certificate checks |
+
+The implemented extraction baseline uses three-point recovery and a weak comparison anchor. The two-point alternative is covered by the proofs and local checks; see the [extraction guide](docs/extraction.md).
+
+## Code and documentation
+
+- [prototype/](prototype/): folding algebra, samplers, and extraction components.
+- [tests/](tests/): algebra and interface tests.
+- [scripts/](scripts/): reproducible calculations and certificate checks.
+- [docs/](docs/README.md): protocol, proofs, parameters, and model assumptions.
+
+Start with the [protocol](docs/protocol.md). The [research notes](docs/research-notes.md) contain the full derivations; the [parameter guide](docs/parameters.md) connects them to the calculations above.
 
 ## License
 
