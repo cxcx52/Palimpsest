@@ -7,6 +7,6 @@
 - [CauchyFold](https://eprint.iacr.org/2026/2011): comparison and extraction tools used in this analysis.
 - [Proof-Carrying Data from Accumulation Schemes](https://eprint.iacr.org/2020/499): accumulation and history composition.
 
-The [research notes](../paper/research-notes.md) contain the detailed theorem-level comparisons. Third-party PDFs and source snapshots remain in the local research archive.
+The [research notes](../docs/research-notes.md) contain the detailed theorem-level comparisons. Third-party PDFs and source snapshots remain in the local research archive.
 
 Repository presentation references: [Nova](https://github.com/microsoft/Nova) and [LatticeFold](https://github.com/NethermindEth/latticefold).

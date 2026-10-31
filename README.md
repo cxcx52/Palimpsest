@@ -19,8 +19,7 @@ The current prototype implements the three-point/weak-anchor baseline (coefficie
 
 | Directory | Contents |
 |---|---|
-| [paper/](paper/research-notes.md) | Complete mathematical research notes |
-| [docs/](docs/index.md) | Protocol, extraction, parameters, and scope |
+| [docs/](docs/index.md) | Research notes, protocol, extraction, parameters, and scope |
 | [prototype/](prototype/) | Python reference components |
 | [tests/](tests/) | Local algebra and interface tests |
 | [scripts/](scripts/) | Test runner and reproducible cost checks |

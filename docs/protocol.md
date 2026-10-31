@@ -1,6 +1,6 @@
 # 协议
 
-完整定义与证明见 [研究笔记第一部分](../paper/research-notes.md#part-protocol)。
+完整定义与证明见 [研究笔记第一部分](research-notes.md#part-protocol)。
 
 在 $R_q=\mathbb F_q[X]/(X^N+1)$ 上，使用同一承诺
 

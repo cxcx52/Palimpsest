@@ -1,6 +1,6 @@
 # 参数与成本
 
-完整推导见 [参数账本](../paper/research-notes.md#part-parameters)。默认实例是一份来源对应一次标量 $\mathbb F_p$ 乘法；其评估用途见 [研究范围](scope.md)。
+完整推导见 [参数账本](research-notes.md#part-parameters)。默认实例是一份来源对应一次标量 $\mathbb F_p$ 乘法；其评估用途见 [研究范围](scope.md)。
 
 | 参数 | 值 |
 |---|---:|
@@ -40,4 +40,4 @@ python -B scripts/extraction_costs.py
 python -B scripts/check_local_refinements.py
 ```
 
-第一条复算已实现提取路线，第二条包含 R18 理论公式和局部改进核验。公开恢复控制路线只发送原输入带 16,809,472 bytes，其预处理及逐来源成本见 [公开恢复推导](../paper/research-notes.md#appendix-public-recovery)。
+第一条复算已实现提取路线，第二条包含 R18 理论公式和局部改进核验。公开恢复控制路线只发送原输入带 16,809,472 bytes，其预处理及逐来源成本见 [公开恢复推导](research-notes.md#appendix-public-recovery)。

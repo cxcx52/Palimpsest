@@ -1,6 +1,6 @@
 # 提取路线
 
-两条路线使用同一协议、参数和核半径。完整证明分别见 [融合弱锚点](../paper/research-notes.md#appendix-weak-anchors) 与 [两点无放回](../paper/research-notes.md#appendix-two-point)。
+两条路线使用同一协议、参数和核半径。完整证明分别见 [融合弱锚点](research-notes.md#appendix-weak-anchors) 与 [两点无放回](research-notes.md#appendix-two-point)。
 
 | 路线 | 首次记录 / 独立锚点 | 单步统计损失 Δ | 完整乘数 $\mathcal R$ | 状态 |
 |---|---|---|---|---|
