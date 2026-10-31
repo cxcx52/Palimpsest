@@ -1,5 +1,7 @@
 # Palimpsest
 
+![Palimpsest folding overview](assets/palimpsest-overview.png)
+
 High-arity lattice folding for Boolean quadratic relations.
 
 Palimpsest combines an accumulator with multiple source instances under a shared lattice commitment. Its analysis connects bounded openings, source validity, and a matching bounded-depth history through an explicit knowledge extractor.
