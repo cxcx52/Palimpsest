@@ -1,0 +1,19 @@
+{
+  "method": "pocklington",
+  "n": 170141573107009798923418825414604921797,
+  "base": 2,
+  "factor_certificate": {
+    "method": "pocklington",
+    "n": 39614081257699650756468527203,
+    "base": 2,
+    "factor_certificate": {
+      "method": "pocklington",
+      "n": 36028848541794281,
+      "base": 2,
+      "factor_certificate": {
+        "method": "trial",
+        "n": 2147483647
+      }
+    }
+  }
+}

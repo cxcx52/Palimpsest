@@ -1,0 +1,2 @@
+# Python 3.10+; the packaged prototype and tests use only the standard library.
+# No third-party runtime dependencies are required.

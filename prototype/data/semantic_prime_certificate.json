@@ -1,0 +1,49 @@
+{
+  "method": "lucas_complete_factorization",
+  "n": 2251799813685083,
+  "base": 2,
+  "factors": [
+    {
+      "certificate": {
+        "method": "trial",
+        "n": 2
+      },
+      "exponent": 1
+    },
+    {
+      "certificate": {
+        "method": "trial",
+        "n": 113
+      },
+      "exponent": 1
+    },
+    {
+      "certificate": {
+        "method": "trial",
+        "n": 271
+      },
+      "exponent": 1
+    },
+    {
+      "certificate": {
+        "method": "trial",
+        "n": 997
+      },
+      "exponent": 1
+    },
+    {
+      "certificate": {
+        "method": "trial",
+        "n": 2879
+      },
+      "exponent": 1
+    },
+    {
+      "certificate": {
+        "method": "trial",
+        "n": 12809
+      },
+      "exponent": 1
+    }
+  ]
+}
